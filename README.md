@@ -21,3 +21,6 @@ The flysky FS-i6 transmitter firmware version is FLY SKY FS-i6 2.0 1-Feb-2018.
 can be found in the CleanFlight Flight Control Repository.
 https://github.com/cleanflight/cleanflight/tree/7cd417959b3cb605aa574fc8c0f16759943527ef
 https://github.com/betaflight/betaflight/wiki/Single-wire-FlySky-(IBus)-telemetry
+
+# The main Source Library
+https://github.com/bmellink/IBusBM-
