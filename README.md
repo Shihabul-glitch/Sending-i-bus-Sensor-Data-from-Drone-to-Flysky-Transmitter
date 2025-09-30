@@ -1,3 +1,11 @@
+# How to use:
+1. I have used the ibusBM library but with a little modification. This library is tested on ESP Core 3.3.0 only and on ESP32 DevKit V1 30 pin version.
+   # The modifications:
+   1. Changed line 116 to 119 to make it compatible with the esp32 core 3.X
+   2. Changed the MaxNumberofSensor from 10 to 15
+   3. This works for 14 sensors though the offical flysky manual states that it can take up to 15 sensor. This is probably due to the libraries coding strategy.
+   4. The sensor ID provided in the library are not for flysky fs i6. only id 0x01, 0x02 and 0x03 works 0x01 for temperature, 0x02 for RPM and 0x03 for voltage. Eaqch of this Sensor data has their own scaling factor. such as 400 means 0 degree celicus. For voltage 50 means .5V . For RPM there is no scaling factor.
+2. Upload the ibusBM library inside Arduino/libraries folder. Then use the codes given.
 # Sending-i-bus-Sensor-Data-from-Drone-to-Flysky-Transmitter
 This code is only tested for ESP32 Devkit-v1 30 pin version
 Only the FSIA10B 10 channel receiver is tested.
